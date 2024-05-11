@@ -31,18 +31,18 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col col-md-12">
-                <h1 class="text-center">
+                <div class="text-center">
                     <span class="float-start">
                         <button onclick="modalRegistrarEmpleado()" class="btn btn-success" title="Registrar Nuevo Empleado">
                             <i class="bi bi-person-plus"></i>
                         </button>
                     </span>
-                    Lista de empleados (<?php echo $totalEmpleados ?>)
-                    <span class="float-end">
+                    <h2>Total empleados (<?php echo $totalEmpleados ?>)</h2>
+                    <!-- <span class="float-end">
                         <a href="acciones/exportar.php" class="btn btn-success" title="Exportar a CSV" download="empleados.csv"><i class="bi bi-filetype-csv"></i></a>
-                    </span>
+                    </span> -->
                     <hr>
-                </h1>
+                </div>
                 <?php
                 include("empleados.php"); ?>
             </div>
