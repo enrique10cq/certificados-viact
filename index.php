@@ -44,7 +44,7 @@
                     <hr>
                 </div>
                 <?php
-                include("empleados.php"); ?>
+                include("views/admin.php"); ?>
             </div>
         </div>
     </div>
