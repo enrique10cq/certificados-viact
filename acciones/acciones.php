@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$nombre', '$edad', '$cedula', '$sexo', '$telefono', '$cargo', '$nombreArchivo')";
 
             if ($conexion->query($sql) === TRUE) {
-                header("location: ../");
+                header("location:../");
             } else {
                 echo "Error al crear el registro: " . $conexion->error;
             }
@@ -52,12 +52,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  * Función para obtener todos los empleados 
  */
 
-function obtenerEmpleados($conexion)
+function obtenerCertificado($conexion)
 {
-    $sql = "SELECT * FROM tbl_empleados ORDER BY id ASC";
+    $sql = "SELECT * FROM certificado ORDER BY id_certificado ASC";
     $resultado = $conexion->query($sql);
     if (!$resultado) {
         return false;
     }
     return $resultado;
-}
+}            

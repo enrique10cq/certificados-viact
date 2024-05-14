@@ -1,10 +1,11 @@
 <?php
-$host = "localhost";
-$usuario = "root";
-$contrasena = "enriqueadmin";
-$base_de_datos = "db_certificados";
 
-$conexion = new mysqli($host, $usuario, $contrasena, $base_de_datos);
+$host = "localhost";
+$user = "root";
+$pass = "enriqueadmin";
+$db = "db_certificados";
+
+$conexion = new mysqli($host, $user, $pass, $db);
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
